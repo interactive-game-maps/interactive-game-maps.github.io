@@ -1,0 +1,3 @@
+[submodule "gta4"]
+	path = gta4
+	url = https://github.com/interactive-game-maps/gta4.git
