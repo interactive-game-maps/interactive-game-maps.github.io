@@ -1,3 +1,6 @@
 [submodule "gta4"]
 	path = gta4
 	url = https://github.com/interactive-game-maps/gta4.git
+[submodule "killing_floor-stronghold"]
+	path = killing_floor-stronghold
+	url = https://github.com/interactive-game-maps/killing_floor-stronghold.git
