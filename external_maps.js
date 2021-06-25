@@ -11048,5 +11048,40 @@ var external_maps_json = [
                 'quality': 'high'
             }
         ]
+    },
+    {
+        'name': 'Minetest',
+        'maps': [
+            {
+                'url': 'https://github.com/minetest-mapserver/mapserver',
+                'locations': [
+                    'Main'
+                ],
+                'purposes': [
+                    'Generator',
+                    'Live'
+                ],
+                'type': 'open',
+                'source': 'minetest-mapserver',
+                'source_url': 'https://github.com/minetest-mapserver/mapserver',
+                'quality': 'high'
+            }
+        ]
+    },
+    {
+        'name': 'A Short Hike',
+        'maps': [
+            {
+                'url': 'https://voxelse.github.io/aShortHike/interactiveMap/',
+                'locations': [
+                    'Main'
+                ],
+                'purposes': [],
+                'type': 'open',
+                'source': 'voxelse.github.io',
+                'source_url': 'https://github.com/Voxelse/voxelse.github.io',
+                'quality': 'high'
+            }
+        ]
     }
 ]
