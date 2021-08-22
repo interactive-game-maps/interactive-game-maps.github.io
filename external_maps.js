@@ -816,7 +816,8 @@ var external_maps_json = [
                 "url": "https://hunt-map.info/",
                 "locations": [
                     "Stillwater Bayou",
-                    "Lawson Delta"
+                    "Lawson Delta",
+                    "DeSalle"
                 ],
                 "type": "open",
                 "source_url": "https://github.com/Findoss/Hunt-map",
