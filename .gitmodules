@@ -13,3 +13,6 @@
 [submodule "kona"]
 	path = kona
 	url = https://github.com/interactive-game-maps/kona.git
+[submodule "haydee_2"]
+	path = haydee_2
+	url = https://github.com/interactive-game-maps/haydee_2.git
