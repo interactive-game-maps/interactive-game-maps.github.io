@@ -29,6 +29,7 @@ types.forEach(type => {
         if (game_series_entry.series) {
             var series_title = document.createElement('h3');
             series_title.innerText = game_series_entry.series;
+            series_title.className = 'game-series';
 
             var game_list = document.createElement('ul');
             game_list.className = 'SG';
@@ -49,6 +50,7 @@ types.forEach(type => {
         } else {
             var series_title = document.createElement('h3');
             series_title.innerText = game_series_entry.name;
+            series_title.className = 'game-series';
 
             var game_list = document.createElement('ul');
             game_list.className = 'SG';
@@ -199,3 +201,26 @@ function get_map_entry(args) {
         return
     });
 }
+
+var input = document.createElement('input');
+input.setAttribute('type', 'text');
+input.setAttribute('placeholder', 'Search game series…');
+input.onkeyup = () => {
+    var filter = input.value.toUpperCase();
+
+    var series = document.getElementsByClassName('game-series');
+    for (let index = 0; index < series.length; index++) {
+        const element = series[index];
+        if (element.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            element.style.display = '';
+            element.nextElementSibling.style.display = '';
+        } else {
+            element.style.display = 'none';
+            element.nextElementSibling.style.display = 'none';
+        }
+
+    }
+};
+var div = document.getElementById('top');
+div.setAttribute('style', 'display: flex;justify-content: center;padding: 1% 2% 2% 2%;');
+div.appendChild(input);
