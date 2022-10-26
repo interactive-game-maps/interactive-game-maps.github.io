@@ -21,4 +21,4 @@ It'll give you a geoJson with all markers of the edit layer which we'll then inc
 
 ### I'd like to create a new interactive map
 Making a simple interactive map like the examples included in this repository is really easy.
-Open [an issue](https://github.com/interactive-game-maps/interactive-game-maps.github.io/issues/new/choose) with a high quality image of the map and we can get you going.
+Start a new project from https://github.com/interactive-game-maps/template and have a look into `map.js` to get started.
