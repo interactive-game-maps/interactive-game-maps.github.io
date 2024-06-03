@@ -1,0 +1,91 @@
+name: Add an Interactive Map
+description: Add a missing interactive map to the list
+
+body:
+- type: markdown
+  attributes:
+    value: "## Welcome"
+- type: markdown
+  attributes:
+    value: "Thanks for taking your time to contribute.\nPlease fill out the following fields."
+- type: input
+  id: game_series
+  attributes:
+    label: Game Series
+    description: "Name of the game series to add.\nLeave this field empty if there's no series (yet)."
+    placeholder: "The Witcher"
+- type: input
+  id: game_name
+  attributes:
+    label: Game Name
+    description: "Name of the game to add.\nIf the game is part of a series you may leave out the series name."
+    placeholder: "3"
+  validations:
+    required: true
+- type: input
+  id: source
+  attributes:
+    label: Source
+    description: "Please insert the overall source where this map is coming from.\nThis is the main domain where this map and maybe other maps can be found."
+    placeholder: "example.com"
+  validations:
+    required: true
+- type: input
+  id: url
+  attributes:
+    label: URL
+    description: "Public address where the map can be accessed."
+    placeholder: "https://example.com/maps/the_witcher_3"
+  validations:
+    required: true
+- type: input
+  id: locations
+  attributes:
+    label: Locations
+    description: "Which locations of the games overall map area does this map cover?\nIf the map covers multiple areas, separate them with a comma.\nIf there's no name for the world area, use `Main`."
+    placeholder: "Skellige Isles, Kaer Mohren"
+  validations:
+    required: true
+- type: input
+  id: purpose
+  attributes:
+    label: Purposes
+    description: "Does the map has a specific purpose? What can be found in this map?\nList them comma separated."
+    placeholder: "Missions, Loot, Collectibles, Monsters"
+  validations:
+    required: false
+- type: dropdown
+  id: type
+  attributes:
+    label: Type
+    description: "Is the map completely open source (**open**)\nIs the source not available or a login required to access functionality (**closed**)\nAre features locked behind a paywall or are ads displayed (**commercial)**"
+    options:
+      - open
+      - closed
+      - commercial
+  validations:
+    required: true
+- type: input
+  id: source_url
+  attributes:
+    label: Code Source URL
+    description: "If the map is open source, provide the link to the code."
+    placeholder: "https://github.com/asd/map"
+  validations:
+    required: false
+- type: dropdown
+  id: quality
+  attributes:
+    label: Quality
+    description: "How is the overall quality of the map?\nPlease consider image quality, completeness and usability."
+    options:
+      - high
+      - low
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Additional information
+- type: markdown
+  attributes:
+    value: "Thanks for taking your time and adding this map!"
