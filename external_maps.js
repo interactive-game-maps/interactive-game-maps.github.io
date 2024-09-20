@@ -11084,5 +11084,21 @@ var external_maps_json = [
                 'quality': 'high'
             }
         ]
+    },
+    {
+        'name': 'Haiku, the Robot',
+        'maps': [
+            {
+                'url': 'https://wildryce.github.io/Arcadia-Interactive-Map/',
+                'locations': [
+                    'Arcadia'
+                ],
+                'purposes': [],
+                'type': 'open',
+                'source': 'wildryce.github.io',
+                'source_url': 'https://github.com/wildryce/Arcadia-Interactive-Map',
+                'quality': 'high'
+            }
+        ]
     }
 ]
